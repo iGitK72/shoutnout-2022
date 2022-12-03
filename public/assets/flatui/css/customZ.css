@@ -1,0 +1,80 @@
+.dsplZable {
+	display:none;
+	}
+.inviZable {
+	visibility:hidden;
+	}
+.fadeZable {
+       -webkit-animation: fadein 3s; /* Safari and Chrome */
+       -moz-animation: fadein 3s; /* Firefox */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera */
+        animation: fadein 3s;
+	}
+	#info-recorder {
+		position: relative;
+		left: -290px;
+		top: -150px;
+		z-index: 1000;
+		height: 50px;
+		width: 300px;
+		background: url(assets/gfx/info-clickrecord.png) bottom right no-repeat;
+		clear: none;
+
+		-webkit-animation: fadein 5s; /* Safari and Chrome */
+		-moz-animation: fadein 5s; /* Firefox */
+		-ms-animation: fadein 5s; /* Internet Explorer */
+		-o-animation: fadein 5s; /* Opera */
+		animation: fadein 5s;	
+		}
+	.recorderbut_pause{
+		background-image: url(assets/gfx/recorderbuttons.png);
+		background-position: -147px 0px ;
+	}
+	a.no-outline{
+		outline: none;
+		}
+	.bigredrecorder-centerblock {
+		display: block;
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 6em;
+		}
+	.bigredrecorder-outerrecorder, .bigredrecorder-middlerecorder, .bigredrecorder-innerrecorder {
+		display: inline-block;
+		}
+	.bigredrecorder-outerrecorder {
+		border-radius: 50%;
+		background-color: #BCBCBC;
+		width: 150px;
+		height: 150px;
+		text-align:center;
+		position:relative;
+		}
+	.bigredrecorder-middlerecorder{
+		border-radius: 50%;
+		background-color: #fff;
+		width: 90%;
+		height: 90%;
+		margin: auto;
+		margin-top: 5%;
+		}
+	.bigredrecorder-innerrecorder{
+		border-radius: 50%;
+		background-color: #ff3c00;
+		width: 96%;
+		height: 96%;
+		margin: auto;
+		margin-top: 2%;
+		-moz-transition: all .31s;
+	   -o-transition: all .31s;
+	   -webkit-transition: all .31s;
+	   transition: all .41s;
+	  }
+	.bigredrecorder-innerrecorder:hover, .bigredrecorder-innerrecorder.active{
+		border-radius: 15%;
+		margin-top: 25%;
+		width: 50%;
+		height: 50%;
+		}

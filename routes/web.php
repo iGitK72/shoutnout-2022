@@ -12,9 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
+// Laravel 9 View Routes path and route name
+Route::view('/', 'welcome')->name('welcome');
+Route::view('/new', 'home')->name('homepage');
+// Instead of these Laravel 8 View Routes
+Route::get('/laravel', function () {
+    return view('welcome-orig');
 });
 
 Route::middleware([
